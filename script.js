@@ -14,8 +14,8 @@ function playGame() {
 
     userBidAmount = +prompt("Enter your bid amount");
 
-     if(userBidNumber === 0){
-        alert("enter bid number");
+     if(userBidAmount === 0){
+        alert("enter bid amount");
         return;
     }
 
