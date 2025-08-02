@@ -14,6 +14,11 @@ function playGame() {
 
     userBidAmount = +prompt("Enter your bid amount");
 
+     if(userBidNumber === 0){
+        alert("enter bid number");
+        return;
+    }
+
     if(userBidAmount > Number(initAmount.innerHTML)){
         alert("You cannot bid more than your current balance");
         return;
@@ -21,6 +26,11 @@ function playGame() {
 
     
     userBidNumber = +prompt("What is your bid number from 1 to 10");
+
+    if(userBidNumber === 0){
+        alert("enter bid number");
+        return;
+    }
     
     let gnBid = generatedBid();
     let bidMatched = isBidMatched(userBidNumber, gnBid);
