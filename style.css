@@ -1,0 +1,104 @@
+/* Reset & Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #1d2b64, #f8cdda);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Container Box */
+div {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 60px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Heading Style */
+#heading {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #00ffc8; /* Soft neon green */
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(0, 255, 200, 0.6);
+  animation: glowPulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowPulse {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 8px rgba(0, 255, 200, 0.6);
+  }
+  100% {
+    transform: scale(1.05);
+    text-shadow: 0 0 18px rgba(0, 255, 200, 1);
+  }
+}
+
+
+
+/* Message Paragraph */
+  #bidMessage {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #ffe066; /* Warm yellow */
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 224, 102, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+/* Button Design */
+#button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #ff9800;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#button:hover {
+  background: #e68900;
+  transform: scale(1.05);
+}
+
+/* Main top heading */
+.main-heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
