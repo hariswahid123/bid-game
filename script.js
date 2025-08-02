@@ -15,10 +15,12 @@ function playGame() {
 
     userBidAmount = +prompt("Enter your bid amount");
 
-    if(userBidAmount === 0){
+
+     if(userBidAmount === 0){
         alert("enter bid amount");
         return;
     }
+
     if(userBidAmount > Number(initAmount.innerHTML)){
         alert("You cannot bid more than your current balance");
         return;
