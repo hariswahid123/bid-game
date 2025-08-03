@@ -12,28 +12,38 @@ function playGame() {
         return;
     }
 
-
     userBidAmount = +prompt("Enter your bid amount");
 
-    
-     if(userBidAmount === 0){
+
+    if (userBidAmount === 0) {
         alert("enter bid amount");
+        return;
+    } else if (userBidAmount <= -1) {
+        alert("negative number not allowed");
         return;
     }
 
-    if(userBidAmount > Number(initAmount.innerHTML)){
+    if (userBidAmount > Number(initAmount.innerHTML)) {
         alert("You cannot bid more than your current balance");
         return;
     }
 
-    
+
     userBidNumber = +prompt("What is your bid number from 1 to 10");
 
-    if(userBidNumber === 0){
+    if (userBidNumber === 0) {
         alert("enter bid number");
         return;
+    } else if (userBidNumber > 10) {
+        alert("your number is above than 10");
+        return;
+    } else if (userBidNumber <= -1) {
+        alert("negative number not allowed");
+        return;
     }
-    
+
+
+
     let gnBid = generatedBid();
     let bidMatched = isBidMatched(userBidNumber, gnBid);
     showBidMessage(bidMatched, userBidAmount);
